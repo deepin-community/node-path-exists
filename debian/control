@@ -1,0 +1,25 @@
+Source: node-path-exists
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-path-exists
+Vcs-Git: https://salsa.debian.org/js-team/node-path-exists.git
+Homepage: https://github.com/sindresorhus/path-exists#readme
+Rules-Requires-Root: no
+
+Package: node-path-exists
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Check if a path exists
+ Helps to check if a path exist.
+ .
+ Node.js is an event-based server-side JavaScript engine.
