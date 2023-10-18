@@ -1,15 +1,14 @@
 Description: switch test from ava to tape
 Author: Xavier Guimard <yadd@debian.org>
 Forwarded: not-needed
-Last-Update: 2019-12-18
+Last-Update: 2022-04-01
 
 --- a/test.js
 +++ b/test.js
 @@ -1,12 +1,14 @@
 -import test from 'ava';
--import pathExists from '.';
-+const test = require('tape');
-+const pathExists = require('.');
++import {default as test} from 'tape';
+ import {pathExists, pathExistsSync} from './index.js';
  
  test('async', async t => {
  	t.true(await pathExists('test.js'));
@@ -18,7 +17,7 @@ Last-Update: 2019-12-18
  });
  
  test('sync', t => {
- 	t.true(pathExists.sync('test.js'));
- 	t.false(pathExists.sync('fail'));
+ 	t.true(pathExistsSync('test.js'));
+ 	t.false(pathExistsSync('fail'));
 +	t.end();
  });
