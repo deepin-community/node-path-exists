@@ -1,3 +1,64 @@
+node-path-exists (5.0.0-8) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-path-exists: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 11:33:27 +0000
+
+node-path-exists (5.0.0-7) unstable; urgency=medium
+
+  * Team upload
+  * node 16 assumes correctly that "./" is esm, fix patch
+  * Need tape during test
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 01 May 2022 22:41:36 +0200
+
+node-path-exists (5.0.0-6) unstable; urgency=medium
+
+  * Team upload
+  * Better commonjs export
+
+ -- Yadd <yadd@debian.org>  Fri, 08 Apr 2022 18:16:20 +0200
+
+node-path-exists (5.0.0-5) unstable; urgency=medium
+
+  * Team upload
+  * Don't use last dh-sequence-nodejs features to allow pkg-js-tools migration
+
+ -- Yadd <yadd@debian.org>  Fri, 01 Apr 2022 18:25:05 +0200
+
+node-path-exists (5.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Build commonjs files (Closes: #1008774)
+
+ -- Yadd <yadd@debian.org>  Fri, 01 Apr 2022 10:48:12 +0200
+
+node-path-exists (5.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Drop dependency to nodejs
+  * Back to unstable after successful tests
+
+ -- Yadd <yadd@debian.org>  Tue, 29 Mar 2022 10:25:32 +0200
+
+node-path-exists (5.0.0-2) experimental; urgency=medium
+
+  * Team upload
+  * Fix autopkgtest
+  * Drop Breaks field due to circular dependency
+
+ -- Yadd <yadd@debian.org>  Sun, 27 Mar 2022 14:21:59 +0200
+
+node-path-exists (5.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 5.0.0
+  * Breaks: node-find-up < 6
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Fri, 25 Mar 2022 16:22:06 +0100
+
 node-path-exists (4.0.0-3) unstable; urgency=medium
 
   * Team upload
